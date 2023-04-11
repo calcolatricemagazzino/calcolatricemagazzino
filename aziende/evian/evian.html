@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Evian</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    Cliente <input type="text" id="cliente" /> Azienda
+    <input type="text" id="azienda" /> Data e Ora
+    <input type="text" id="dataora" placeholder="data, ora" />
+    Numero Fattura <input type="text" id="nfattura" placeholder="00n" />
+    <br />
+    <br />
+    <div>
+      <label>(24) Bottigliette in Plastica</label
+      ><input type="number" placeholder="(stack)" id="bottiglietteplastica" />
+      <br />
+    </div>
+    <div>
+      <label>(176) Evian Energy</label
+      ><input type="number" placeholder="(stack)" id="evianenergy" /> <br />
+    </div>
+    <br />
+    <button onclick="calcola()">CREA FATTURA</button>
+    <span id="output"></span>
+  </body>
+</html>
