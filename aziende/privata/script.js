@@ -34,7 +34,7 @@ function calcola() {
   pepsi = 304;
   pringles = 256;
   milkshake = 250;
-  gin = 768;
+  gin = 256;
   whisky = 768;
   vodka = 768;
   birra = 440;
