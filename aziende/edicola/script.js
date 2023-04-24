@@ -20,7 +20,9 @@ function calcola() {
     stackerbaccia * erbaccia +
     stackradiceerrata * radiceerrata +
     stackradicelumna * radicelumna +
-    stackpipa * pipa;
+    stackpipa * pipa +
+    stackgrinder * grinder +
+    stackaccendino * accendino;
 
   if (stackerbaccia == 0) {
     erbacciatext = "";
