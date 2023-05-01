@@ -15,6 +15,7 @@ function calcola() {
   stackcaricatoregreengas = document.getElementById("caricatoregreengas").value;
   stackzainotiratore = document.getElementById("zainotiratore").value;
   stackpistolaantica = document.getElementById("pistolaantica").value;
+  stackenervit = document.getElementById("enervit").value;
   nfattura = document.getElementById("nfattura").value;
   zainodesert = 90;
   zainocamo = 90;
@@ -27,6 +28,7 @@ function calcola() {
   caricatoregreengas = 240;
   zainotiratore = 1960;
   pistolaantica = 7500;
+  enervit = 160;
 
   totale =
     stackzainodesert * zainodesert +
@@ -39,7 +41,8 @@ function calcola() {
     stackcaricatoreco2 * caricatoreco2 +
     stackcaricatoregreengas * caricatoregreengas +
     stackzainotiratore * zainotiratore +
-    stackpistolaantica * pistolaantica;
+    stackpistolaantica * pistolaantica +
+    stackenervit * enervit;
 
   if (stackzainodesert == 0) {
     zainodeserttext = "";
@@ -116,6 +119,12 @@ function calcola() {
       "- " + stackpistolaantica + "x1 Pistola Antica" + "<br>";
   }
 
+  if (stackenervit == 0) {
+    enervittext = "";
+  } else {
+    enervittext = "- " + stackenervit + "x64 Enervit" + "<br>";
+  }
+
   document.getElementById("output").innerHTML =
     "<br>" +
     "<br>" +
@@ -162,6 +171,7 @@ function calcola() {
     caricatoregreengastext +
     zainotiratoretext +
     pistolaanticatext +
+    enervit +
     "<br>" +
     "§9Importo totale" +
     "<br>" +
