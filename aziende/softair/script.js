@@ -16,7 +16,7 @@ function calcola() {
   stackzainotiratore = document.getElementById("zainotiratore").value;
   stackpistolaantica = document.getElementById("pistolaantica").value;
   stackenervit = document.getElementById("enervit").value;
-  stackmedagliasouvenir = document("medagliasouvenir").value;
+  stackmedagliasouvenir = document.getElementById("medagliasouvenir").value;
   nfattura = document.getElementById("nfattura").value;
   zainodesert = 90;
   zainocamo = 90;
