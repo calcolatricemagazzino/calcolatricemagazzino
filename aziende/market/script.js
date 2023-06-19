@@ -83,7 +83,7 @@ function calcola() {
   completooctopus = 13440;
   completoscheletro = 13440;
   completocreeper = 13440;
-  completochanel = 13400;
+  completochanel = 13440;
   cappelloelegante = 1345;
   giaccaburberry = 560;
   jeanszara = 560;
