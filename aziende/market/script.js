@@ -130,10 +130,10 @@ function calcola() {
   katanadacollezione = 3360;
   coltellinodacollezione = 4360;
   pistoladacollezione = 5700;
-  zainocalcioseriea = 1120;
-  zainotrapstar = 2240;
-  zainonike = 2240;
-  zainolanvin = 2240;
+  zainocalcioseriea = 560;
+  zainotrapstar = 1120;
+  zainonike = 1120;
+  zainolanvin = 1120;
 
   totale =
     stackcompletoadidas * completoadidas +
