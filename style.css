@@ -28,3 +28,9 @@ button {
 button:hover {
   filter: brightness(80%);
 }
+.titolo {
+    font-weight: bolder;
+    font-size: 120%;
+    color: wheat;
+    margin-top: 20px;
+  }
