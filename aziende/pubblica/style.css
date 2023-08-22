@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+}
+@media (max-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #121317;
+  }
+  .inputBox {
+    position: relative;
+    width: 350px;
+  }
+  .inputBox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid;
+    background-color: #121317;
+    border-radius: 5px;
+    outline: none;
+    color: rgb(245, 222, 179);
+    font-size: 1em;
+    transition: 0.5s;
+  }
+  .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(245, 222, 179, 0.5);
+    transition: 0.5s;
+  }
+  .inputBox input:valid ~ span,
+  .inputBox input:focus ~ span {
+    color: white;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.75em;
+    padding: 0 10px;
+    border-left: 1px solid wheat;
+    border-right: 1px solid wheat;
+    letter-spacing: 0.2em;
+    background: wheat;
+    border-radius: 2px;
+  }
+
+  .buttonBox {
+    position: relative;
+    display: inline-block;
+  }
+
+  .buttonBox button {
+    width: 350px;
+    padding: 10px;
+    border: 1px solid wheat;
+    background-color: #121317;
+    border-radius: 5px;
+    outline: none;
+    color: wheat;
+    font-size: 1em;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .buttonBox button:hover {
+    color: black;
+    background-color: wheat;
+    border-radius: 5px;
+  }
+
+  .output {
+    font-weight: bolder;
+    margin-top: 100px;
+    color: wheat;
+    text-align: center;
+  }
+
+  .titolo {
+    font-weight: bolder;
+    font-size: 120%;
+    color: wheat;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 769px) {
+  body {
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #121317;
+  }
+
+  .grid1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Due colonne di larghezza uguale */
+    gap: 30px; /* Spazio tra le celle */
+    margin-left: 10%;
+    margin-right: 10%;
+    height: fit-content;
+  }
+  .grid2 {
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr; /* Due colonne di larghezza uguale */
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .inputBox {
+    position: relative;
+    width: 350px;
+  }
+  .inputBox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid;
+    background-color: #121317;
+    border-radius: 5px;
+    outline: none;
+    color: rgb(245, 222, 179);
+    font-size: 1em;
+    transition: 0.5s;
+  }
+  .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(245, 222, 179, 0.5);
+    transition: 0.5s;
+  }
+  .inputBox input:valid ~ span,
+  .inputBox input:focus ~ span {
+    color: white;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.75em;
+    padding: 0 10px;
+    border-left: 1px solid wheat;
+    border-right: 1px solid wheat;
+    letter-spacing: 0.2em;
+    background: wheat;
+    border-radius: 2px;
+  }
+
+  .buttonBox {
+    text-align: center;
+  }
+
+  .buttonBox button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid wheat;
+    background-color: #121317;
+    border-radius: 5px;
+    outline: none;
+    color: wheat;
+    font-size: 1em;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .buttonBox button:hover {
+    color: black;
+    background-color: wheat;
+    border-radius: 5px;
+  }
+
+  .output {
+    font-weight: bolder;
+    color: wheat;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 40px;
+  }
+
+  .titolo {
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 120%;
+    color: wheat;
+    margin-top: 20px;
+  }
+}

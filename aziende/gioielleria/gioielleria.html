@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Gioielleria</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="titolo">Gioielleria</div>
+    <div class="grid-container">
+      <div class="grid1">
+        <div class="inputBox">
+          <input type="text" id="cliente" required />
+          <span>cliente</span>
+        </div>
+        <div class="inputBox">
+          <input type="text" id="azienda" required />
+          <span>azienda</span>
+        </div>
+        <div class="inputBox">
+          <input type="number" id="nfattura" required />
+          <span>numero fattura</span>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <div class="inputBox">
+          <input type="number" id="fedenunziale" required />
+          <span>Fede Nunziale</span>
+        </div>
+        <div class="inputBox">
+          <input type="number" id="orologio" required />
+          <span>Orologio</span>
+        </div>
+        <div class="inputBox">
+          <input type="number" id="braccialeargento" required />
+          <span>Bracciale Argento</span>
+        </div>
+        <div class="inputBox">
+          <input type="number" id="anellodiamante" required />
+          <span>Anello in Diamante</span>
+        </div>
+        <div class="inputBox">
+          <input type="number" id="braccialeoro" required />
+          <span>Bracciale Oro</span>
+        </div>
+        <div class="inputBox">
+          <input type="number" id="rolexcuoio" required />
+          <span>Rolex Cuoio</span>
+        </div>
+        <div class="inputBox">
+          <input type="number" id="rolexoro" required />
+          <span>Rolex Oro</span>
+        </div>
+        <div class="inputBox">
+          <input type="number" id="divinorosso" required />
+          <span>C. Divino Rosso</span>
+        </div>
+        <div class="inputBox">
+          <input type="number" id="divinonero" required />
+          <span>C. Divino Nero</span>
+        </div>
+        <div class="inputBox">
+          <input type="number" id="divinoazzurro" required />
+          <span>C. Divino Azzurro</span>
+        </div>
+        <div class="inputBox">
+          <input type="number" id="lgbt" required />
+          <span>C. LGBT</span>
+        </div>
+        <div class="inputBox">
+          <input type="number" id="braccialevittoriano" required />
+          <span>Bracciale Vittoriano</span>
+        </div>
+      </div>
+      <div class="grid2">
+        <div class="buttonBox">
+          <button onclick="calcola()">CREA FATTURA</button>
+        </div>
+
+        <div id="totale" class="output"></div>
+        <div id="fattura" class="output"></div>
+        <div id="scontrino" class="output"></div>
+      </div>
+    </div>
+  </body>
+</html>
