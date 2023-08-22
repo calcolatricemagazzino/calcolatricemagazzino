@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #121317;
+}
+.inputBox {
+  position: relative;
+  width: 350px;
+}
+.inputBox input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid;
+  background-color: #121317;
+  border-radius: 5px;
+  outline: none;
+  color: rgb(245, 222, 179);
+  font-size: 1em;
+  transition: 0.5s;
+}
+.inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1em;
+  color: rgba(245, 222, 179, 0.5);
+  transition: 0.5s;
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+  color: white;
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.75em;
+  padding: 0 10px;
+  border-left: 1px solid wheat;
+  border-right: 1px solid wheat;
+  letter-spacing: 0.2em;
+  background: wheat;
+  border-radius: 2px;
+}
+
+.buttonBox {
+  position: relative;
+  display: inline-block;
+}
+
+.buttonBox button {
+  width: 350px;
+  padding: 10px;
+  border: 1px solid wheat;
+  background-color: #121317;
+  border-radius: 5px;
+  outline: none;
+  color: wheat;
+  font-size: 1em;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.buttonBox button:hover {
+  color: black;
+  background-color: wheat;
+  border-radius: 5px;
+}
+
+.output {
+  font-weight: bolder;
+  margin-top: 100px;
+  color: wheat;
+  text-align: center;
+}
+
+.titolo {
+  font-weight: bolder;
+  font-size: 120%;
+  color: wheat;
+  margin-top: 20px;
+}
