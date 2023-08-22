@@ -38,17 +38,6 @@ var prezzi = [
   { nome: "Zaino Eastpack", prezzo: 560 },
   { nome: "Zaino Normale", prezzo: 40 },
   { nome: "Zaino Arcobaleno", prezzo: 64 },
-  { nome: "In My Mind", prezzo: 1345 },
-  { nome: "Guarda Come Flexo", prezzo: 1345 },
-  { nome: "Bulldozzer", prezzo: 1345 },
-  { nome: "Sad!", prezzo: 1345 },
-  { nome: "Panda", prezzo: 1345 },
-  { nome: "More Than You Know", prezzo: 1345 },
-  { nome: "Losing It", prezzo: 1345 },
-  { nome: "Yoshi", prezzo: 1345 },
-  { nome: "Piccone Potenziato", prezzo: 560 },
-  { nome: "Ascia Potenziata", prezzo: 560 },
-  { nome: "Pala Potenziata", prezzo: 560 },
   { nome: "Porta Pregiata", prezzo: 560 },
   { nome: "Switch", prezzo: 1345 },
   { nome: "Quadro", prezzo: 1345 },
@@ -120,41 +109,30 @@ function calcola() {
   oggetti[24] = parseInt(document.getElementById("zainoeastpack").value);
   oggetti[25] = parseInt(document.getElementById("zainonormale").value);
   oggetti[26] = parseInt(document.getElementById("zainoarcobaleno").value);
-  oggetti[27] = parseInt(document.getElementById("inmymind").value);
-  oggetti[28] = parseInt(document.getElementById("guardacomeflexo").value);
-  oggetti[29] = parseInt(document.getElementById("bulldozzer").value);
-  oggetti[30] = parseInt(document.getElementById("sad").value);
-  oggetti[31] = parseInt(document.getElementById("panda").value);
-  oggetti[32] = parseInt(document.getElementById("morethanyouknow").value);
-  oggetti[33] = parseInt(document.getElementById("losingit").value);
-  oggetti[34] = parseInt(document.getElementById("yoshi").value);
-  oggetti[35] = parseInt(document.getElementById("picconepotenziato").value);
-  oggetti[36] = parseInt(document.getElementById("asciapotenziata").value);
-  oggetti[37] = parseInt(document.getElementById("palapotenziata").value);
-  oggetti[38] = parseInt(document.getElementById("portapregiata").value);
-  oggetti[39] = parseInt(document.getElementById("swich").value);
-  oggetti[40] = parseInt(document.getElementById("televisione").value);
-  oggetti[41] = parseInt(document.getElementById("quadro").value);
-  oggetti[42] = parseInt(document.getElementById("orologioantico").value);
-  oggetti[43] = parseInt(document.getElementById("giradischiantico").value);
-  oggetti[44] = parseInt(document.getElementById("cuffiegaming").value);
-  oggetti[45] = parseInt(document.getElementById("bloccodilapislazuli").value);
-  oggetti[46] = parseInt(document.getElementById("bloccodidiamante").value);
-  oggetti[47] = parseInt(document.getElementById("bloccodismeraldo").value);
-  oggetti[48] = parseInt(document.getElementById("cappello").value);
-  oggetti[49] = parseInt(document.getElementById("maglia").value);
-  oggetti[50] = parseInt(document.getElementById("pantaloni").value);
-  oggetti[51] = parseInt(document.getElementById("scarpe").value);
-  oggetti[52] = parseInt(document.getElementById("mazzadacollezione").value);
-  oggetti[53] = parseInt(document.getElementById("katanadacollezione").value);
-  oggetti[54] = parseInt(
+  oggetti[27] = parseInt(document.getElementById("portapregiata").value);
+  oggetti[28] = parseInt(document.getElementById("swich").value);
+  oggetti[29] = parseInt(document.getElementById("televisione").value);
+  oggetti[30] = parseInt(document.getElementById("quadro").value);
+  oggetti[31] = parseInt(document.getElementById("orologioantico").value);
+  oggetti[32] = parseInt(document.getElementById("giradischiantico").value);
+  oggetti[33] = parseInt(document.getElementById("cuffiegaming").value);
+  oggetti[34] = parseInt(document.getElementById("bloccodilapislazuli").value);
+  oggetti[35] = parseInt(document.getElementById("bloccodidiamante").value);
+  oggetti[36] = parseInt(document.getElementById("bloccodismeraldo").value);
+  oggetti[37] = parseInt(document.getElementById("cappello").value);
+  oggetti[38] = parseInt(document.getElementById("maglia").value);
+  oggetti[39] = parseInt(document.getElementById("pantaloni").value);
+  oggetti[40] = parseInt(document.getElementById("scarpe").value);
+  oggetti[41] = parseInt(document.getElementById("mazzadacollezione").value);
+  oggetti[42] = parseInt(document.getElementById("katanadacollezione").value);
+  oggetti[43] = parseInt(
     document.getElementById("coltellinodacollezione").value
   );
-  oggetti[55] = parseInt(document.getElementById("pistoladacollezione").value);
-  oggetti[56] = parseInt(document.getElementById("zainocalcioseriea").value);
-  oggetti[57] = parseInt(document.getElementById("zainotrapstar").value);
-  oggetti[58] = parseInt(document.getElementById("zainonike").value);
-  oggetti[59] = parseInt(document.getElementById("zainolanvin").value);
+  oggetti[44] = parseInt(document.getElementById("pistoladacollezione").value);
+  oggetti[45] = parseInt(document.getElementById("zainocalcioseriea").value);
+  oggetti[46] = parseInt(document.getElementById("zainotrapstar").value);
+  oggetti[47] = parseInt(document.getElementById("zainonike").value);
+  oggetti[48] = parseInt(document.getElementById("zainolanvin").value);
 
   // ... (aggiungi gli altri oggetti qui)
 
