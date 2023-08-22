@@ -30,7 +30,8 @@ button:hover {
 }
 .titolo {
     font-weight: bolder;
-    font-size: 120%;
+    font-size: 130%;
     color: wheat;
     margin-top: 20px;
+    margin-bottom: 20px;
   }
