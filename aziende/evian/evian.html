@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Evian</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" />
+  </head>
+
+  <body>
+    <div class="titolo">Evian</div>
+    <div class="grid-container">
+      <div class="grid1">
+        <div class="inputBox">
+          <input type="text" id="cliente" required />
+          <span>cliente</span>
+        </div>
+        <div class="inputBox">
+          <input type="text" id="azienda" required />
+          <span>azienda</span>
+        </div>
+        <div class="inputBox">
+          <input type="number" id="nfattura" required />
+          <span>numero fattura</span>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="inputBox">
+          <input type="number" id="bottiglietteplastica" required />
+          <span>Bottigliette in Plastica</span>
+        </div>
+        <div class="inputBox">
+          <input type="number" id="evianenergy" required />
+          <span>Evian Energy</span>
+        </div>
+      </div>
+      <div class="grid2">
+        <div class="buttonBox">
+          <button onclick="calcola()">CREA FATTURA</button>
+        </div>
+
+        <div id="totale" class="output"></div>
+        <div id="fattura" class="output"></div>
+        <div id="scontrino" class="output"></div>
+      </div>
+    </div>
+  </body>
+</html>
