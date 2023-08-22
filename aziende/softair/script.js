@@ -14,8 +14,8 @@ var prezzi = [
   { nome: "Zaino Desert", prezzo: 90 },
   { nome: "Zaino Camo", prezzo: 90 },
   { nome: "Glock 18", prezzo: 1960 },
-  { nome: "PDW Camo", prezzo: 2240 },
-  { nome: "Fucile M16", prezzo: 2800 },
+  { nome: "PDW Desert", prezzo: 2240 },
+  { nome: "Assalto Camo", prezzo: 2800 },
   { nome: "Sacchetto di Pallini", prezzo: 360 },
   { nome: "Sacchetto di Pallini 0.23", prezzo: 520 },
   { nome: "Caricatore CO2", prezzo: 160 },
@@ -50,8 +50,8 @@ function calcola() {
   oggetti[0] = parseInt(document.getElementById("zainodesert").value);
   oggetti[1] = parseInt(document.getElementById("zainocamo").value);
   oggetti[2] = parseInt(document.getElementById("glock18").value);
-  oggetti[3] = parseInt(document.getElementById("pdwcamo").value);
-  oggetti[4] = parseInt(document.getElementById("fucilem16").value);
+  oggetti[3] = parseInt(document.getElementById("pdwdesert").value);
+  oggetti[4] = parseInt(document.getElementById("assaltocamo").value);
   oggetti[5] = parseInt(document.getElementById("sacchettodipallini").value);
   oggetti[6] = parseInt(document.getElementById("sacchettodipallini023").value);
   oggetti[7] = parseInt(document.getElementById("caricatoreco2").value);
