@@ -7,7 +7,6 @@ body {
 }
 
 .button-grid {
-  margin-top: 5%;
   margin-left: 20%;
   margin-right: 20%;
   margin-bottom: 5%;
@@ -29,9 +28,10 @@ button:hover {
   filter: brightness(80%);
 }
 .titolo {
-    font-weight: bolder;
-    font-size: 130%;
-    color: wheat;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
+  font-weight: bolder;
+  font-size: 130%;
+  color: wheat;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
