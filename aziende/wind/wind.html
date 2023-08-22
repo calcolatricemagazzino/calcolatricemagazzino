@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Wind</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="\style.css" />
+  </head>
+
+  <body>
+    <div class="titolo">Wind</div>
+    <div class="inputBox">
+      <input type="text" id="cliente" required />
+      <span>cliente</span>
+    </div>
+    <div class="inputBox">
+      <input type="text" id="azienda" required />
+      <span>azienda</span>
+    </div>
+
+    <div class="inputBox">
+      <input type="number" id="nfattura" required />
+      <span>numero fattura</span>
+    </div>
+    <br /><br />
+
+    <div class="inputBox">
+      <input type="number" id="iphone4s" required />
+      <span>iPhone 4S</span>
+    </div>
+    <div class="inputBox">
+      <input type="number" id="iphone7" required />
+      <span>iPhone 7</span>
+    </div>
+    <div class="inputBox">
+      <input type="number" id="ipadpro" required />
+      <span>iPad PRO</span>
+    </div>
+    <div class="inputBox">
+      <input type="number" id="mac" required />
+      <span>Mac</span>
+    </div>
+    <div class="inputBox">
+      <input type="number" id="macpro" required />
+      <span>Mac PRO</span>
+    </div>
+
+    <div class="buttonBox">
+      <button onclick="calcola()">CREA FATTURA</button>
+    </div>
+    <div id="totale" class="output"></div>
+    <div id="fattura" class="output"></div>
+    <div id="scontrino" class="output"></div>
+    <br /><br />
+  </body>
+</html>
