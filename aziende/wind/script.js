@@ -73,7 +73,7 @@ function calcola() {
 
   for (i = 0; i < oggetti.length; i++) {
     if (!isNaN(oggetti[i]) && oggetti[i] != 0) {
-      fattura += "- " + oggetti[i] + "x64 " + prezzi[i].nome + "<br>";
+      fattura += "- " + oggetti[i] + "x1 " + prezzi[i].nome + "<br>";
     } else {
     }
   }
