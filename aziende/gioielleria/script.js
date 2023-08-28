@@ -11,7 +11,6 @@ window.addEventListener(
 // listino con nomi e prezzi
 
 var prezzi = [
-  { nome: "Evian Energy", prezzo: 176 },
   { nome: "Fede Nunziale", prezzo: 2320 },
   { nome: "Orologio", prezzo: 4960 },
   { nome: "Bracciale Argento", prezzo: 4960 },
