@@ -68,8 +68,8 @@ function calcola() {
   oggetti[13] = parseInt(document.getElementById("sprite").value);
   oggetti[14] = parseInt(document.getElementById("fanta").value);
   oggetti[15] = parseInt(document.getElementById("cocacola").value);
-  oggetti[16] = parseInt(document.getElementById("kebabpollo").value);
-  oggetti[17] = parseInt(document.getElementById("kebabagnello").value);
+  oggetti[16] = parseInt(document.getElementById("kebabdipollo").value);
+  oggetti[17] = parseInt(document.getElementById("kebabdiagnello").value);
   oggetti[18] = parseInt(document.getElementById("cioccolatacalda").value);
   oggetti[19] = parseInt(document.getElementById("pandizenzero").value);
 
