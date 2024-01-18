@@ -29,7 +29,8 @@ var prezzi = [
   {nome: "Completo LGBT", prezzo: 3360},
   {nome: "Completo Divino Rosso", prezzo: 25000},
   {nome: "Completo Divino Nero", prezzo: 35200},
-  {nome: "Completo Divino Azzurro", prezzo: 49600}
+  {nome: "Completo Divino Azzurro", prezzo: 49600},
+  {nome: "Cannocchiale", prezzo: 1500}
 ];
 
 var totale = 0;
@@ -69,6 +70,7 @@ function calcola() {
   oggetti[16] = parseInt(document.getElementById("completodivinorosso").value);
   oggetti[17] = parseInt(document.getElementById("completodivinonero").value);
   oggetti[18] = parseInt(document.getElementById("completodivinoazzurro").value);
+  oggetti[19] = parseInt(document.getElementById("cannocchiale").value);
   // ... (aggiungi gli altri oggetti qui)
 
   // calcolo totale
@@ -108,3 +110,6 @@ function calcola() {
   document.getElementById("fattura").innerHTML = fattura;
 
 }
+
+
+
