@@ -14,6 +14,7 @@ var prezzi = [
   { nome: "Stendardo Semplice", prezzo: 260 },
   { nome: "Stendardo Modificato", prezzo: 415 },
   { nome: "Fuochi D'Artificio", prezzo: 400 },
+  { nome: "Colorante", prezzo: 400 },
 ];
 var totale = 0;
 var cliente;
@@ -36,6 +37,8 @@ function calcola() {
   oggetti[0] = parseInt(document.getElementById("stendardosemplice").value);
   oggetti[1] = parseInt(document.getElementById("stendardomodificato").value);
   oggetti[2] = parseInt(document.getElementById("fuochidartificio").value);
+  oggetti[3] = parseInt(document.getElementById("colorante").value);
+
   // ... (aggiungi gli altri oggetti qui)
 
   // calcolo totale
