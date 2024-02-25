@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Bosco Verticale</title>
+    <script src="../script/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  </head>
+
+  <body>
+    <div class="titolo">Bosco Verticale</div>
+    <div class="grid-container">
+      <div class="grid1">
+        <div class="inputBox">
+          <input type="text" id="cliente" required />
+          <span>cliente</span>
+        </div>
+        <div class="inputBox">
+          <input type="text" id="azienda" disabled />
+          <span><b id="aziendaText">Bosco Verticale</b></span>
+        </div>
+        <div class="cercaBox">
+          <input
+            type="text"
+            id="t1"
+            value=""
+            size="20"
+            placeholder="Inserisci il testo da cercare"
+            onkeydown="if(event.keyCode==13) findString(document.getElementById('t1').value)"
+          />
+        </div>
+        <div class="cercaBox">
+          <input
+            type="button"
+            value="CERCA"
+            onclick="findString(document.getElementById('t1').value)"
+          />
+        </div>
+        <div></div>
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <div class="inputBox">
+          <input type="number" id="uomofocaccina" required />
+          <span>Uomo focaccina</span>
+        </div>
+        <div class="inputBox">
+          <input type="number" id="oreo" required />
+          <span>oreo</span>
+        </div>
+
+        <div class="inputBox">
+          <input type="number" id="champagne" required />
+          <span>champagne</span>
+        </div>
+
+        <div class="inputBox">
+          <input type="number" id="domperignom" required />
+          <span>dom perignom</span>
+        </div>
+
+        <div class="inputBox">
+          <input type="number" id="dongiovanni" required />
+          <span>Don giovanni</span>
+        </div>
+
+        <div class="inputBox">
+          <input type="number" id="jackspisporks" required />
+          <span>jack spisporks</span>
+        </div>
+
+        <div class="inputBox">
+          <input type="number" id="martini" required />
+          <span>martini</span>
+        </div>
+
+        <div class="inputBox">
+          <input type="number" id="moet" required />
+          <span>moet</span>
+        </div>
+
+        <div class="inputBox">
+          <input type="number" id="prosecco" required />
+          <span>prosecco</span>
+        </div>
+
+        <div class="inputBox">
+          <input type="number" id="rosenerodavola" required />
+          <span>Rose' Nero D'avola</span>
+        </div>
+      </div>
+      <div class="grid2">
+        <div class="buttonBox">
+          <button onclick="BoscoVerticale()">CREA FATTURA</button>
+        </div>
+
+        <div id="totale" class="output"></div>
+        <div id="fattura" class="output"></div>
+        <div id="copia"></div>
+      </div>
+    </div>
+  </body>
+</html>
