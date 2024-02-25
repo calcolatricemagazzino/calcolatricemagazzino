@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Studi Tecnici</title>
+    <script src="../script/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  </head>
+
+  <body>
+    <div class="titolo">Studi Tecnici</div>
+    <div class="grid-container">
+      <div class="grid1">
+        <div class="inputBox">
+          <input type="text" id="cliente" required />
+          <span>cliente</span>
+        </div>
+        <div class="inputBox">
+          <input type="text" id="azienda" disabled />
+          <span><b id="aziendaText">Studi Tecnici</b></span>
+        </div>
+        <div class="cercaBox">
+          <input
+            type="text"
+            id="t1"
+            value=""
+            size="20"
+            placeholder="Inserisci il testo da cercare"
+            onkeydown="if(event.keyCode==13) findString(document.getElementById('t1').value)"
+          />
+        </div>
+        <div class="cercaBox">
+          <input
+            type="button"
+            value="CERCA"
+            onclick="findString(document.getElementById('t1').value)"
+          />
+        </div>
+        <div></div>
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <div class="inputBox">
+          <input type="number" id="stampante" required />
+          <span>Stampante</span>
+        </div>
+        <div class="inputBox">
+          <input type="number" id="atm" required />
+          <span>ATM</span>
+        </div>
+      </div>
+      <div class="grid2">
+        <div class="buttonBox">
+          <button onclick="StudiTecnici()">CREA FATTURA</button>
+        </div>
+
+        <div id="totale" class="output"></div>
+        <div id="fattura" class="output"></div>
+        <div id="copia"></div>
+      </div>
+    </div>
+  </body>
+</html>
