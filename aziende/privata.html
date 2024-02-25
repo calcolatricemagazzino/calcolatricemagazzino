@@ -19,7 +19,24 @@
         </div>
         <div class="inputBox">
           <input type="text" id="azienda" required />
-          <span>azienda</span>
+          <span id="aziendaText">azienda</span>
+        </div>
+        <div class="cercaBox">
+          <input
+            type="text"
+            id="t1"
+            value=""
+            size="20"
+            placeholder="Inserisci il testo da cercare"
+            onkeydown="if(event.keyCode==13) findString(document.getElementById('t1').value)"
+          />
+        </div>
+        <div class="cercaBox">
+          <input
+            type="button"
+            value="CERCA"
+            onclick="findString(document.getElementById('t1').value)"
+          />
         </div>
         <div></div>
         <br />
@@ -104,7 +121,7 @@
 
         <div id="totale" class="output"></div>
         <div id="fattura" class="output"></div>
-        <div id="scontrino" class="output"></div>
+        <div id="copia" class="output"></div>
       </div>
     </div>
   </body>

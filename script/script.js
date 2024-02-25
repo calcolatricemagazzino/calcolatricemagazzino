@@ -11,6 +11,39 @@ function bloccaScrollInputNumber() {
   );
 }
 
+var TRange = null;
+function findString(str) {
+  if (parseInt(navigator.appVersion) < 4) return;
+  var strFound;
+  if (window.find) {
+    strFound = self.find(str);
+    if (strFound && self.getSelection && !self.getSelection().anchorNode) {
+      strFound = self.find(str);
+    }
+    if (!strFound) {
+      strFound = self.find(str, 0, 1);
+      while (self.find(str, 0, 1)) continue;
+    }
+  } else if (navigator.appName.indexOf("Microsoft") != -1) {
+    if (TRange != null) {
+      TRange.collapse(false);
+      strFound = TRange.findText(str);
+      if (strFound) TRange.select();
+    }
+    if (TRange == null || strFound == 0) {
+      TRange = self.document.body.createTextRange();
+      strFound = TRange.findText(str);
+      if (strFound) TRange.select();
+    }
+  } else if (navigator.appName == "Opera") {
+    alert("Il tuo browser non è supportato.");
+    return;
+  }
+  // STRINGA NON TROVATA
+  //if (!strFound) alert("Stringa '" + str + "' non trovata!");
+  //return;
+}
+
 function dataOra() {
   var dataora = new Date();
   var formattedDateTime = dataora
@@ -25,7 +58,6 @@ function dataOra() {
   return formattedDateTime;
 }
 
-// Funzione per calcolare il totale
 function calcolaTotale(oggetti, prezzi) {
   var totale = 0;
   for (var i = 0; i < oggetti.length; i++) {
@@ -36,8 +68,8 @@ function calcolaTotale(oggetti, prezzi) {
 
   return totale;
 }
-// Funzione per costruire la fattura
-function costruisciFattura(dataora, oggetti, prezzi, totale) {
+
+function costruisciFattura(dataora, oggetti, prezzi, totale, azienda) {
   var opzioni = {
     style: "decimal",
     maximumFractionDigits: 0,
@@ -47,8 +79,14 @@ function costruisciFattura(dataora, oggetti, prezzi, totale) {
     .toLocaleString("it-IT", opzioni)
     .replace(/\./g, " ");
 
+  azienda = "";
+  azienda = document.getElementById("azienda").value;
+  if (azienda !== "") {
+  } else {
+    azienda = document.getElementById("aziendaText").textContent;
+  }
+
   var cliente = document.getElementById("cliente").value;
-  var azienda = document.getElementById("azienda").value;
 
   var messaggioTotale =
     totale > 5000
@@ -75,7 +113,28 @@ function costruisciFattura(dataora, oggetti, prezzi, totale) {
 
   fattura += "<br>§9Importo totale<br>§9&#8364; §9§l" + numeroFormattato;
 
+  document.getElementById("copia").innerHTML =
+    '<div class="buttonBox"> <button onclick="Copia()">COPIA FATTURA</button> </div>';
+
   return fattura;
+}
+
+function Copia() {
+  var div = document.getElementById("fattura");
+  var content = div.innerHTML;
+
+  var textarea = document.createElement("textarea");
+  textarea.value = content;
+
+  document.body.appendChild(textarea);
+
+  textarea.select();
+
+  document.execCommand("copy");
+
+  document.body.removeChild(textarea);
+
+  alert("Fattura Copiata!");
 }
 
 function iterazione(oggetti, prezzi) {
@@ -87,7 +146,8 @@ function iterazione(oggetti, prezzi) {
     dataora,
     oggetti,
     prezzi,
-    totale
+    totale,
+    azienda
   );
 }
 
@@ -472,6 +532,7 @@ function Gioielleria() {
   ];
   iterazione(oggetti, prezzi);
 }
+
 function Evian() {
   var oggetti = [];
   oggetti[0] = parseInt(document.getElementById("bottiglietteplastica").value);
