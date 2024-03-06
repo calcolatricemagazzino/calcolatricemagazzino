@@ -6,6 +6,9 @@
   font-family: "Poppins", sans-serif;
   text-transform: capitalize;
 }
+input:disabled {
+  opacity:0.5;
+}
 @media (max-width: 999px) {
   body {
     display: flex;
