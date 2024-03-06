@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   text-transform: capitalize;
+  margin-bottom: 5%;
 }
 input:disabled {
   opacity:0.5;
