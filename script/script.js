@@ -164,7 +164,7 @@ function Wind() {
   oggetti[11] = parseInt(document.getElementById("applewatch").value);
 
   var prezzi = [
-    { nome: "Nokia 3310", prezzo: 260 },
+    { nome: "Nokia 3310", prezzo: 280 },
     { nome: "Xiaomi Mi 10", prezzo: 350 },
     { nome: "LG V60 Thinq 5G", prezzo: 560 },
     { nome: "POCO F2 Pro", prezzo: 560 },
