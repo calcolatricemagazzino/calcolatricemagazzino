@@ -213,7 +213,7 @@ function Softair() {
   iterazione(oggetti, prezzi);
 }
 
-function Pubblica() {
+function Bar() {
   var oggetti = [];
   oggetti[0] = parseInt(document.getElementById("hotdog").value);
   oggetti[1] = parseInt(document.getElementById("sushi").value);
@@ -224,17 +224,14 @@ function Pubblica() {
   oggetti[6] = parseInt(document.getElementById("pane").value);
   oggetti[7] = parseInt(document.getElementById("hamburger").value);
   oggetti[8] = parseInt(document.getElementById("succodifrutta").value);
-  oggetti[9] = parseInt(document.getElementById("patatinefritte").value);
-  oggetti[10] = parseInt(document.getElementById("chickenbox").value);
-  oggetti[11] = parseInt(document.getElementById("pizza").value);
-  oggetti[12] = parseInt(document.getElementById("pepsi").value);
-  oggetti[13] = parseInt(document.getElementById("sprite").value);
-  oggetti[14] = parseInt(document.getElementById("fanta").value);
-  oggetti[15] = parseInt(document.getElementById("cocacola").value);
-  oggetti[16] = parseInt(document.getElementById("kebabdipollo").value);
-  oggetti[17] = parseInt(document.getElementById("kebabdiagnello").value);
-  oggetti[18] = parseInt(document.getElementById("cioccolatacalda").value);
-  oggetti[19] = parseInt(document.getElementById("pandizenzero").value);
+  oggetti[9] = parseInt(document.getElementById("chickenbox").value);
+  oggetti[10] = parseInt(document.getElementById("pizza").value);
+  oggetti[11] = parseInt(document.getElementById("pepsi").value);
+  oggetti[12] = parseInt(document.getElementById("sprite").value);
+  oggetti[13] = parseInt(document.getElementById("fanta").value);
+  oggetti[14] = parseInt(document.getElementById("cocacola").value);
+  oggetti[15] = parseInt(document.getElementById("cioccolatacalda").value);
+  oggetti[16] = parseInt(document.getElementById("pandizenzero").value);
 
   var prezzi = [
     { nome: "Hot Dog", prezzo: 40 },
@@ -246,7 +243,95 @@ function Pubblica() {
     { nome: "Pane", prezzo: 160 },
     { nome: "Hamburger", prezzo: 160 },
     { nome: "Succo di Frutta", prezzo: 240 },
-    { nome: "Patatine Fritte", prezzo: 240 },
+    { nome: "Chicken Box", prezzo: 240 },
+    { nome: "Pizza", prezzo: 240 },
+    { nome: "Pepsi", prezzo: 160 },
+    { nome: "Sprite", prezzo: 160 },
+    { nome: "Fanta", prezzo: 280 },
+    { nome: "Coca-Cola", prezzo: 280 },
+    { nome: "Cioccolata Calda", prezzo: 160 },
+    { nome: "Pan di Zenzero", prezzo: 160 },
+  ];
+
+  iterazione(oggetti, prezzi);
+}
+function Masseria() {
+  var oggetti = [];
+  oggetti[0] = parseInt(document.getElementById("hotdog").value);
+  oggetti[1] = parseInt(document.getElementById("sushi").value);
+  oggetti[2] = parseInt(document.getElementById("cupcakefragola").value);
+  oggetti[3] = parseInt(document.getElementById("cupcakecioccolato").value);
+  oggetti[4] = parseInt(document.getElementById("cupcakevaniglia").value);
+  oggetti[5] = parseInt(document.getElementById("tacos").value);
+  oggetti[6] = parseInt(document.getElementById("pane").value);
+  oggetti[7] = parseInt(document.getElementById("hamburger").value);
+  oggetti[8] = parseInt(document.getElementById("succodifrutta").value);
+  oggetti[9] = parseInt(document.getElementById("chickenbox").value);
+  oggetti[10] = parseInt(document.getElementById("pizza").value);
+  oggetti[11] = parseInt(document.getElementById("pepsi").value);
+  oggetti[12] = parseInt(document.getElementById("sprite").value);
+  oggetti[13] = parseInt(document.getElementById("fanta").value);
+  oggetti[14] = parseInt(document.getElementById("cocacola").value);
+  oggetti[15] = parseInt(
+    document.getElementById("ciambellaalciocciolato").value
+  );
+  oggetti[16] = parseInt(document.getElementById("ciambellarosa").value);
+  oggetti[17] = parseInt(document.getElementById("ciambellaallamenta").value);
+
+  var prezzi = [
+    { nome: "Hot Dog", prezzo: 40 },
+    { nome: "Sushi", prezzo: 120 },
+    { nome: "Cupcake alla Fragola", prezzo: 120 },
+    { nome: "Cupcake al Cioccolato", prezzo: 120 },
+    { nome: "Cupcake alla Vaniglia", prezzo: 120 },
+    { nome: "Tacos", prezzo: 160 },
+    { nome: "Pane", prezzo: 160 },
+    { nome: "Hamburger", prezzo: 160 },
+    { nome: "Succo di Frutta", prezzo: 240 },
+    { nome: "Chicken Box", prezzo: 240 },
+    { nome: "Pizza", prezzo: 240 },
+    { nome: "Pepsi", prezzo: 160 },
+    { nome: "Sprite", prezzo: 160 },
+    { nome: "Fanta", prezzo: 280 },
+    { nome: "Coca-Cola", prezzo: 280 },
+    { nome: "Ciambella al Cioccolato", prezzo: 160 },
+    { nome: "Ciambella Rosa", prezzo: 160 },
+    { nome: "Ciambella alla Menta", prezzo: 160 },
+  ];
+
+  iterazione(oggetti, prezzi);
+}
+
+function McDonalds() {
+  var oggetti = [];
+  oggetti[0] = parseInt(document.getElementById("hotdog").value);
+  oggetti[1] = parseInt(document.getElementById("sushi").value);
+  oggetti[2] = parseInt(document.getElementById("cupcakefragola").value);
+  oggetti[3] = parseInt(document.getElementById("cupcakecioccolato").value);
+  oggetti[4] = parseInt(document.getElementById("cupcakevaniglia").value);
+  oggetti[5] = parseInt(document.getElementById("tacos").value);
+  oggetti[6] = parseInt(document.getElementById("pane").value);
+  oggetti[7] = parseInt(document.getElementById("hamburger").value);
+  oggetti[8] = parseInt(document.getElementById("succodifrutta").value);
+  oggetti[9] = parseInt(document.getElementById("chickenbox").value);
+  oggetti[10] = parseInt(document.getElementById("pizza").value);
+  oggetti[11] = parseInt(document.getElementById("pepsi").value);
+  oggetti[12] = parseInt(document.getElementById("sprite").value);
+  oggetti[13] = parseInt(document.getElementById("fanta").value);
+  oggetti[14] = parseInt(document.getElementById("cocacola").value);
+  oggetti[15] = parseInt(document.getElementById("kebabdipollo").value);
+  oggetti[16] = parseInt(document.getElementById("kebabdiagnello").value);
+
+  var prezzi = [
+    { nome: "Hot Dog", prezzo: 40 },
+    { nome: "Sushi", prezzo: 120 },
+    { nome: "Cupcake alla Fragola", prezzo: 120 },
+    { nome: "Cupcake al Cioccolato", prezzo: 120 },
+    { nome: "Cupcake alla Vaniglia", prezzo: 120 },
+    { nome: "Tacos", prezzo: 160 },
+    { nome: "Pane", prezzo: 160 },
+    { nome: "Hamburger", prezzo: 160 },
+    { nome: "Succo di Frutta", prezzo: 240 },
     { nome: "Chicken Box", prezzo: 240 },
     { nome: "Pizza", prezzo: 240 },
     { nome: "Pepsi", prezzo: 160 },
@@ -255,8 +340,45 @@ function Pubblica() {
     { nome: "Coca-Cola", prezzo: 280 },
     { nome: "Kebab di Pollo", prezzo: 120 },
     { nome: "Kebab di Agnello", prezzo: 120 },
-    { nome: "Cioccolata Calda", prezzo: 160 },
-    { nome: "Pan di Zenzero", prezzo: 160 },
+  ];
+
+  iterazione(oggetti, prezzi);
+}
+
+function Pubblica() {
+  var oggetti = [];
+  oggetti[0] = parseInt(document.getElementById("hotdog").value);
+  oggetti[1] = parseInt(document.getElementById("sushi").value);
+  oggetti[2] = parseInt(document.getElementById("cupcakefragola").value);
+  oggetti[3] = parseInt(document.getElementById("cupcakecioccolato").value);
+  oggetti[4] = parseInt(document.getElementById("cupcakevaniglia").value);
+  oggetti[5] = parseInt(document.getElementById("tacos").value);
+  oggetti[6] = parseInt(document.getElementById("pane").value);
+  oggetti[7] = parseInt(document.getElementById("hamburger").value);
+  oggetti[8] = parseInt(document.getElementById("succodifrutta").value);
+  oggetti[9] = parseInt(document.getElementById("chickenbox").value);
+  oggetti[10] = parseInt(document.getElementById("pizza").value);
+  oggetti[11] = parseInt(document.getElementById("pepsi").value);
+  oggetti[12] = parseInt(document.getElementById("sprite").value);
+  oggetti[13] = parseInt(document.getElementById("fanta").value);
+  oggetti[14] = parseInt(document.getElementById("cocacola").value);
+
+  var prezzi = [
+    { nome: "Hot Dog", prezzo: 40 },
+    { nome: "Sushi", prezzo: 120 },
+    { nome: "Cupcake alla Fragola", prezzo: 120 },
+    { nome: "Cupcake al Cioccolato", prezzo: 120 },
+    { nome: "Cupcake alla Vaniglia", prezzo: 120 },
+    { nome: "Tacos", prezzo: 160 },
+    { nome: "Pane", prezzo: 160 },
+    { nome: "Hamburger", prezzo: 160 },
+    { nome: "Succo di Frutta", prezzo: 240 },
+    { nome: "Chicken Box", prezzo: 240 },
+    { nome: "Pizza", prezzo: 240 },
+    { nome: "Pepsi", prezzo: 160 },
+    { nome: "Sprite", prezzo: 160 },
+    { nome: "Fanta", prezzo: 280 },
+    { nome: "Coca-Cola", prezzo: 280 },
   ];
 
   iterazione(oggetti, prezzi);
@@ -273,14 +395,13 @@ function Privata() {
   oggetti[6] = parseInt(document.getElementById("pane").value);
   oggetti[7] = parseInt(document.getElementById("hamburger").value);
   oggetti[8] = parseInt(document.getElementById("succodifrutta").value);
-  oggetti[9] = parseInt(document.getElementById("patatinefritte").value);
-  oggetti[10] = parseInt(document.getElementById("chickenbox").value);
-  oggetti[11] = parseInt(document.getElementById("pizza").value);
-  oggetti[12] = parseInt(document.getElementById("pepsi").value);
-  oggetti[13] = parseInt(document.getElementById("sprite").value);
-  oggetti[14] = parseInt(document.getElementById("fanta").value);
-  oggetti[15] = parseInt(document.getElementById("cocacola").value);
-  oggetti[16] = parseInt(document.getElementById("oreo").value);
+  oggetti[9] = parseInt(document.getElementById("chickenbox").value);
+  oggetti[10] = parseInt(document.getElementById("pizza").value);
+  oggetti[11] = parseInt(document.getElementById("pepsi").value);
+  oggetti[12] = parseInt(document.getElementById("sprite").value);
+  oggetti[13] = parseInt(document.getElementById("fanta").value);
+  oggetti[14] = parseInt(document.getElementById("cocacola").value);
+  oggetti[15] = parseInt(document.getElementById("oreo").value);
 
   var prezzi = [
     { nome: "Hot Dog", prezzo: 48 },
@@ -292,7 +413,6 @@ function Privata() {
     { nome: "Pane", prezzo: 200 },
     { nome: "Hamburger", prezzo: 240 },
     { nome: "Succo di Frutta", prezzo: 260 },
-    { nome: "Patatine Fritte", prezzo: 260 },
     { nome: "Chicken Box", prezzo: 280 },
     { nome: "Pizza", prezzo: 280 },
     { nome: "Pepsi", prezzo: 180 },
@@ -359,6 +479,11 @@ function Market() {
   oggetti[48] = parseInt(document.getElementById("zainolanvin").value);
   oggetti[49] = parseInt(document.getElementById("portanether").value);
   oggetti[50] = parseInt(document.getElementById("portacremisi").value);
+  oggetti[51] = parseInt(document.getElementById("settimino").value);
+  oggetti[52] = parseInt(document.getElementById("armadio").value);
+  oggetti[53] = parseInt(document.getElementById("mascherageisha").value);
+  oggetti[54] = parseInt(document.getElementById("mascherayokay").value);
+  oggetti[55] = parseInt(document.getElementById("mascherasensei").value);
 
   var prezzi = [
     { nome: "Completo Adidas", prezzo: 3360 },
@@ -412,6 +537,11 @@ function Market() {
     { nome: "Zaino Lanvin", prezzo: 1120 },
     { nome: "Porta Nether", prezzo: 560 },
     { nome: "Porta Cremisi", prezzo: 560 },
+    { nome: "Settimino", prezzo: 700 },
+    { nome: "Armadio", prezzo: 700 },
+    { nome: "Maschera Geisha", prezzo: 560 },
+    { nome: "Maschera Yokay", prezzo: 560 },
+    { nome: "Maschera Sensei", prezzo: 6000 },
   ];
 
   iterazione(oggetti, prezzi);
@@ -428,14 +558,13 @@ function Luxury() {
   oggetti[6] = parseInt(document.getElementById("pane").value);
   oggetti[7] = parseInt(document.getElementById("hamburger").value);
   oggetti[8] = parseInt(document.getElementById("succodifrutta").value);
-  oggetti[9] = parseInt(document.getElementById("patatinefritte").value);
-  oggetti[10] = parseInt(document.getElementById("chickenbox").value);
-  oggetti[11] = parseInt(document.getElementById("pizza").value);
-  oggetti[12] = parseInt(document.getElementById("pepsi").value);
-  oggetti[13] = parseInt(document.getElementById("sprite").value);
-  oggetti[14] = parseInt(document.getElementById("fanta").value);
-  oggetti[15] = parseInt(document.getElementById("cocacola").value);
-  oggetti[16] = parseInt(document.getElementById("oreo").value);
+  oggetti[9] = parseInt(document.getElementById("chickenbox").value);
+  oggetti[10] = parseInt(document.getElementById("pizza").value);
+  oggetti[11] = parseInt(document.getElementById("pepsi").value);
+  oggetti[12] = parseInt(document.getElementById("sprite").value);
+  oggetti[13] = parseInt(document.getElementById("fanta").value);
+  oggetti[14] = parseInt(document.getElementById("cocacola").value);
+  oggetti[15] = parseInt(document.getElementById("oreo").value);
 
   var prezzi = [
     { nome: "Hot Dog", prezzo: 44 },
@@ -447,7 +576,6 @@ function Luxury() {
     { nome: "Pane", prezzo: 180 },
     { nome: "Hamburger", prezzo: 200 },
     { nome: "Succo di Frutta", prezzo: 250 },
-    { nome: "Patatine Fritte", prezzo: 250 },
     { nome: "Chicken Box", prezzo: 260 },
     { nome: "Pizza", prezzo: 260 },
     { nome: "Pepsi", prezzo: 180 },
