@@ -194,6 +194,7 @@ function Softair() {
   oggetti[9] = parseInt(document.getElementById("zainotiratore").value);
   oggetti[10] = parseInt(document.getElementById("pistolaantica").value);
   oggetti[11] = parseInt(document.getElementById("medagliasouvenir").value);
+  oggetti[12] = parseInt(document.getElementById("peluche").value);
 
   var prezzi = [
     { nome: "Zaino Desert", prezzo: 90 },
@@ -208,6 +209,7 @@ function Softair() {
     { nome: "Zaino Tiratore", prezzo: 1960 },
     { nome: "Pistola Antica", prezzo: 7500 },
     { nome: "Medaglia Souvenir", prezzo: 560 },
+    { nome: "Peluche", prezzo: 380 },
   ];
 
   iterazione(oggetti, prezzi);
@@ -362,6 +364,7 @@ function Pubblica() {
   oggetti[12] = parseInt(document.getElementById("sprite").value);
   oggetti[13] = parseInt(document.getElementById("fanta").value);
   oggetti[14] = parseInt(document.getElementById("cocacola").value);
+  oggetti[15] = parseInt(document.getElementById("peluche").value);
 
   var prezzi = [
     { nome: "Hot Dog", prezzo: 40 },
@@ -379,6 +382,7 @@ function Pubblica() {
     { nome: "Sprite", prezzo: 160 },
     { nome: "Fanta", prezzo: 280 },
     { nome: "Coca-Cola", prezzo: 280 },
+    { nome: "Peluche", prezzo: 280 },
   ];
 
   iterazione(oggetti, prezzi);
@@ -402,6 +406,7 @@ function Privata() {
   oggetti[13] = parseInt(document.getElementById("fanta").value);
   oggetti[14] = parseInt(document.getElementById("cocacola").value);
   oggetti[15] = parseInt(document.getElementById("oreo").value);
+  oggetti[16] = parseInt(document.getElementById("peluche").value);
 
   var prezzi = [
     { nome: "Hot Dog", prezzo: 48 },
@@ -420,6 +425,7 @@ function Privata() {
     { nome: "Fanta", prezzo: 300 },
     { nome: "Coca-Cola", prezzo: 300 },
     { nome: "Oreo", prezzo: 320 },
+    { nome: "Peluche", prezzo: 280 },
   ];
   iterazione(oggetti, prezzi);
 }
@@ -484,6 +490,7 @@ function Market() {
   oggetti[53] = parseInt(document.getElementById("mascherageisha").value);
   oggetti[54] = parseInt(document.getElementById("mascherayokay").value);
   oggetti[55] = parseInt(document.getElementById("mascherasensei").value);
+  oggetti[56] = parseInt(document.getElementById("peluche").value);
 
   var prezzi = [
     { nome: "Completo Adidas", prezzo: 3360 },
@@ -542,6 +549,7 @@ function Market() {
     { nome: "Maschera Geisha", prezzo: 560 },
     { nome: "Maschera Yokay", prezzo: 560 },
     { nome: "Maschera Sensei", prezzo: 6000 },
+    { nome: "Peluche", prezzo: 280 },
   ];
 
   iterazione(oggetti, prezzi);
@@ -722,12 +730,14 @@ function Boutique() {
   oggetti[1] = parseInt(document.getElementById("stendardomodificato").value);
   oggetti[2] = parseInt(document.getElementById("fuochidartificio").value);
   oggetti[3] = parseInt(document.getElementById("colorante").value);
+  oggetti[4] = parseInt(document.getElementById("peluche").value);
 
   var prezzi = [
     { nome: "Stendardo Semplice", prezzo: 260 },
     { nome: "Stendardo Modificato", prezzo: 415 },
     { nome: "Fuochi D'Artificio", prezzo: 400 },
     { nome: "Colorante", prezzo: 400 },
+    { nome: "Peluche", prezzo: 280 },
   ];
   iterazione(oggetti, prezzi);
 }
