@@ -347,6 +347,46 @@ function McDonalds() {
   iterazione(oggetti, prezzi);
 }
 
+function Mirabilandia() {
+  var oggetti = [];
+  oggetti[0] = parseInt(document.getElementById("hotdog").value);
+  oggetti[1] = parseInt(document.getElementById("sushi").value);
+  oggetti[2] = parseInt(document.getElementById("cupcakefragola").value);
+  oggetti[3] = parseInt(document.getElementById("cupcakecioccolato").value);
+  oggetti[4] = parseInt(document.getElementById("cupcakevaniglia").value);
+  oggetti[5] = parseInt(document.getElementById("tacos").value);
+  oggetti[6] = parseInt(document.getElementById("pane").value);
+  oggetti[7] = parseInt(document.getElementById("hamburger").value);
+  oggetti[8] = parseInt(document.getElementById("succodifrutta").value);
+  oggetti[9] = parseInt(document.getElementById("chickenbox").value);
+  oggetti[10] = parseInt(document.getElementById("pizza").value);
+  oggetti[11] = parseInt(document.getElementById("pepsi").value);
+  oggetti[12] = parseInt(document.getElementById("sprite").value);
+  oggetti[13] = parseInt(document.getElementById("fanta").value);
+  oggetti[14] = parseInt(document.getElementById("cocacola").value);
+  oggetti[15] = parseInt(document.getElementById("peluche").value);
+
+  var prezzi = [
+    { nome: "Hot Dog", prezzo: 40 },
+    { nome: "Sushi", prezzo: 120 },
+    { nome: "Cupcake alla Fragola", prezzo: 120 },
+    { nome: "Cupcake al Cioccolato", prezzo: 120 },
+    { nome: "Cupcake alla Vaniglia", prezzo: 120 },
+    { nome: "Tacos", prezzo: 160 },
+    { nome: "Pane", prezzo: 160 },
+    { nome: "Hamburger", prezzo: 160 },
+    { nome: "Succo di Frutta", prezzo: 240 },
+    { nome: "Chicken Box", prezzo: 240 },
+    { nome: "Pizza", prezzo: 240 },
+    { nome: "Pepsi", prezzo: 160 },
+    { nome: "Sprite", prezzo: 160 },
+    { nome: "Fanta", prezzo: 280 },
+    { nome: "Coca-Cola", prezzo: 280 },
+    { nome: "Peluche", prezzo: 280 },
+  ];
+
+  iterazione(oggetti, prezzi);
+}
 function Pubblica() {
   var oggetti = [];
   oggetti[0] = parseInt(document.getElementById("hotdog").value);
