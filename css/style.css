@@ -89,7 +89,6 @@
   }
   .inputBox input:valid ~ span,
   .inputBox input:focus ~ span {
-    color: white;
     transform: translateX(10px) translateY(-7px);
     font-size: 0.75em;
     padding: 0 10px;
@@ -98,6 +97,7 @@
     letter-spacing: 0.2em;
     background: wheat;
     border-radius: 2px;
+    color: black;
   }
 
   .buttonBox {
@@ -220,7 +220,7 @@
   }
   .inputBox input:valid ~ span,
   .inputBox input:focus ~ span {
-    color: white;
+    color: black;
     transform: translateX(10px) translateY(-7px);
     font-size: 0.75em;
     padding: 0 10px;
