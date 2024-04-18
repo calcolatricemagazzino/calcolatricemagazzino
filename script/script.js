@@ -500,9 +500,9 @@ function Market() {
   oggetti[25] = parseInt(document.getElementById("zainonormale").value);
   oggetti[26] = parseInt(document.getElementById("zainoarcobaleno").value);
   oggetti[27] = parseInt(document.getElementById("portapregiata").value);
-  oggetti[28] = parseInt(document.getElementById("swich").value);
-  oggetti[29] = parseInt(document.getElementById("televisione").value);
-  oggetti[30] = parseInt(document.getElementById("quadro").value);
+  oggetti[28] = parseInt(document.getElementById("switch").value);
+  oggetti[29] = parseInt(document.getElementById("quadro").value);
+  oggetti[30] = parseInt(document.getElementById("televisione").value);
   oggetti[31] = parseInt(document.getElementById("orologioantico").value);
   oggetti[32] = parseInt(document.getElementById("giradischiantico").value);
   oggetti[33] = parseInt(document.getElementById("cuffiegaming").value);
