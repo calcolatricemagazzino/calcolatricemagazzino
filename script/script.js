@@ -94,13 +94,13 @@ function costruisciFattura(dataora, oggetti, prezzi, totale, azienda) {
   document.getElementById("totale").innerHTML = messaggioTotale;
 
   var fattura =
-    "(Pagina 1) <br> §1§lFATTURA <Br> §1§oMagazzini<br><br>§8Cliente§0<br>" +
+    "<b>(Pagina 1)</b> <br><br> FATTURA <Br> Magazzini<br><br>Cliente<br>" +
     cliente +
-    "<br><br>§8Azienda§0<br>" +
+    "<br><br>Azienda<br>" +
     azienda +
     "<br><br>Data e Ora<br>" +
     dataora +
-    "<br><br>(Pagina 2)<br>§1§lFATTURA§1 <br> §oMagazzini <br><br>§8Prodotti acquistati§0<br>";
+    "<br><br><b>(Pagina 2)</b><br><br>FATTURA <br> Magazzini <br><br>Prodotti acquistati<br>";
 
   for (var i = 0; i < oggetti.length; i++) {
     if (!isNaN(oggetti[i]) && oggetti[i] != 0) {
@@ -108,7 +108,7 @@ function costruisciFattura(dataora, oggetti, prezzi, totale, azienda) {
     }
   }
 
-  fattura += "<br>§9Importo totale<br>§9&#8364; §9§l" + numeroFormattato;
+  fattura += "<br>Importo totale<br>&#8364; " + numeroFormattato;
 
   document.getElementById("copia").innerHTML =
     '<div class="buttonBox"> <button onclick="Copia()">COPIA FATTURA</button> </div>';
