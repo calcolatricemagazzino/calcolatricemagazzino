@@ -100,7 +100,7 @@ function costruisciFattura(dataora, oggetti, prezzi, totale, azienda) {
     azienda +
     "<br><br>Data e Ora<br>" +
     dataora +
-    "<br><br><b>(Pagina 2)</b><br><br>FATTURA <br> Magazzini <br><br>Prodotti acquistati<br>";
+    "<br><br><br><b>(Pagina 2)</b><br><br>FATTURA <br> Magazzini <br><br>Prodotti acquistati<br>";
 
   for (var i = 0; i < oggetti.length; i++) {
     if (!isNaN(oggetti[i]) && oggetti[i] != 0) {
