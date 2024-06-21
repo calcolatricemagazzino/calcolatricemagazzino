@@ -531,6 +531,16 @@ function Market() {
   oggetti[54] = parseInt(document.getElementById("mascherayokay").value);
   oggetti[55] = parseInt(document.getElementById("mascherasensei").value);
   oggetti[56] = parseInt(document.getElementById("peluche").value);
+  oggetti[57] = parseInt(document.getElementById("divano").value);
+  oggetti[58] = parseInt(document.getElementById("poltrona").value);
+  oggetti[59] = parseInt(document.getElementById("letto").value);
+  oggetti[60] = parseInt(document.getElementById("sgabello").value);
+  oggetti[61] = parseInt(document.getElementById("sedia").value);
+  oggetti[62] = parseInt(document.getElementById("tavolo").value);
+  oggetti[63] = parseInt(document.getElementById("sveglia").value);
+  oggetti[64] = parseInt(document.getElementById("libreria").value);
+  oggetti[65] = parseInt(document.getElementById("giochi").value);
+  oggetti[66] = parseInt(document.getElementById("ombrello").value);
 
   var prezzi = [
     { nome: "Completo Adidas", prezzo: 3360 },
@@ -562,7 +572,7 @@ function Market() {
     { nome: "Zaino Arcobaleno", prezzo: 64 },
     { nome: "Porta Pregiata", prezzo: 560 },
     { nome: "Switch", prezzo: 1345 },
-    { nome: "Quadro", prezzo: 1345 },
+    { nome: "Quadro", prezzo: 650 },
     { nome: "Televisione", prezzo: 960 },
     { nome: "Orologio Antico", prezzo: 1400 },
     { nome: "Giradischi Antico", prezzo: 5375 },
@@ -590,6 +600,16 @@ function Market() {
     { nome: "Maschera Yokay", prezzo: 560 },
     { nome: "Maschera Sensei", prezzo: 6000 },
     { nome: "Peluche", prezzo: 280 },
+    { nome: "Divano", prezzo: 750 },
+    { nome: "Poltrona", prezzo: 300 },
+    { nome: "Letto", prezzo: 900 },
+    { nome: "Sgabello", prezzo: 150 },
+    { nome: "Sedia", prezzo: 400 },
+    { nome: "Tavolo", prezzo: 900 },
+    { nome: "Sveglia", prezzo: 150 },
+    { nome: "Libreria", prezzo: 750 },
+    { nome: "Giochi", prezzo: 400 },
+    { nome: "Ombrello", prezzo: 60 },
   ];
 
   iterazione(oggetti, prezzi);
@@ -771,6 +791,9 @@ function Boutique() {
   oggetti[2] = parseInt(document.getElementById("fuochidartificio").value);
   oggetti[3] = parseInt(document.getElementById("colorante").value);
   oggetti[4] = parseInt(document.getElementById("peluche").value);
+  oggetti[5] = parseInt(document.getElementById("casco").value);
+  oggetti[6] = parseInt(document.getElementById("portafoglio").value);
+  oggetti[7] = parseInt(document.getElementById("borsa").value);
 
   var prezzi = [
     { nome: "Stendardo Semplice", prezzo: 260 },
@@ -778,6 +801,9 @@ function Boutique() {
     { nome: "Fuochi D'Artificio", prezzo: 400 },
     { nome: "Colorante", prezzo: 400 },
     { nome: "Peluche", prezzo: 280 },
+    { nome: "Casco", prezzo: 160 },
+    { nome: "Portafoglio", prezzo: 200 },
+    { nome: "Borsa", prezzo: 480 },
   ];
   iterazione(oggetti, prezzi);
 }
@@ -821,5 +847,53 @@ function StudiTecnici() {
   ];
   iterazione(oggetti, prezzi);
 }
+
+function MetroTravels() {
+  var oggetti = [];
+  oggetti[0] = parseInt(document.getElementById("valigia").value);
+
+  var prezzi = [{ nome: "Valigia", prezzo: 1200 }];
+  iterazione(oggetti, prezzi);
+}
+
+function Hotel() {
+  var oggetti = [];
+  oggetti[0] = parseInt(document.getElementById("hotdog").value);
+  oggetti[1] = parseInt(document.getElementById("sushi").value);
+  oggetti[2] = parseInt(document.getElementById("cupcakefragola").value);
+  oggetti[3] = parseInt(document.getElementById("cupcakecioccolato").value);
+  oggetti[4] = parseInt(document.getElementById("cupcakevaniglia").value);
+  oggetti[5] = parseInt(document.getElementById("tacos").value);
+  oggetti[6] = parseInt(document.getElementById("pane").value);
+  oggetti[7] = parseInt(document.getElementById("hamburger").value);
+  oggetti[8] = parseInt(document.getElementById("succodifrutta").value);
+  oggetti[9] = parseInt(document.getElementById("chickenbox").value);
+  oggetti[10] = parseInt(document.getElementById("pizza").value);
+  oggetti[11] = parseInt(document.getElementById("pepsi").value);
+  oggetti[12] = parseInt(document.getElementById("sprite").value);
+  oggetti[13] = parseInt(document.getElementById("fanta").value);
+  oggetti[14] = parseInt(document.getElementById("cocacola").value);
+
+  var prezzi = [
+    { nome: "Hot Dog", prezzo: 40 },
+    { nome: "Sushi", prezzo: 120 },
+    { nome: "Cupcake alla Fragola", prezzo: 120 },
+    { nome: "Cupcake al Cioccolato", prezzo: 120 },
+    { nome: "Cupcake alla Vaniglia", prezzo: 120 },
+    { nome: "Tacos", prezzo: 160 },
+    { nome: "Pane", prezzo: 160 },
+    { nome: "Hamburger", prezzo: 160 },
+    { nome: "Succo di Frutta", prezzo: 240 },
+    { nome: "Chicken Box", prezzo: 240 },
+    { nome: "Pizza", prezzo: 240 },
+    { nome: "Pepsi", prezzo: 160 },
+    { nome: "Sprite", prezzo: 160 },
+    { nome: "Fanta", prezzo: 280 },
+    { nome: "Coca-Cola", prezzo: 280 },
+  ];
+
+  iterazione(oggetti, prezzi);
+}
+
 // Blocca lo scrolling su input number
 bloccaScrollInputNumber();

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Hotel</title>
+    <script src="../script/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  </head>
+
+  <body>
+    <div class="titolo">Hotel</div>
+    <div class="grid-container">
+      <div class="grid1">
+        <div class="inputBox">
+          <input type="text" id="cliente" required />
+          <span>cliente</span>
+        </div>
+        <div class="inputBox">
+          <input type="text" id="azienda" disabled />
+          <span><b id="aziendaText">Hotel</b></span>
+        </div>
+        <div class="cercaBox">
+          <input
+            type="text"
+            id="t1"
+            value=""
+            size="20"
+            placeholder="Inserisci il testo da cercare"
+            onkeydown="if(event.keyCode==13) findString(document.getElementById('t1').value)"
+          />
+        </div>
+        <div class="cercaBox">
+          <input
+            type="button"
+            value="CERCA"
+            onclick="findString(document.getElementById('t1').value)"
+          />
+        </div>
+        <div></div>
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <div class="inputBox">
+          <input type="number" id="hotdog" required />
+          <span>Hot Dog</span>
+        </div>
+        <div class="inputBox">
+          <input type="number" id="sushi" required />
+          <span>Sushi</span>
+        </div>
+        <div class="inputBox">
+          <input type="number" id="cupcakefragola" required />
+          <span>Cupcake alla Fragola</span>
+        </div>
+        <div class="inputBox">
+          <input type="number" id="cupcakecioccolato" required />
+          <span>Cupcake al Cioccolato</span>
+        </div>
+        <div class="inputBox">
+          <input type="number" id="cupcakevaniglia" required />
+          <span>Cupcake alla Vaniglia</span>
+        </div>
+        <div class="inputBox">
+          <input type="number" id="tacos" required />
+          <span>Tacos</span>
+        </div>
+        <div class="inputBox">
+          <input type="number" id="pane" required />
+          <span>Pane</span>
+        </div>
+        <div class="inputBox">
+          <input type="number" id="hamburger" required />
+          <span>Hamburger</span>
+        </div>
+        <div class="inputBox">
+          <input type="number" id="succodifrutta" required />
+          <span>Succo di Frutta</span>
+        </div>
+        <div class="inputBox">
+          <input type="number" id="chickenbox" required />
+          <span>Chicken Box</span>
+        </div>
+        <div class="inputBox">
+          <input type="number" id="pizza" required />
+          <span>Pizza</span>
+        </div>
+        <div class="inputBox">
+          <input type="number" id="pepsi" required />
+          <span>Pepsi</span>
+        </div>
+        <div class="inputBox">
+          <input type="number" id="sprite" required />
+          <span>Sprite</span>
+        </div>
+        <div class="inputBox">
+          <input type="number" id="fanta" required />
+          <span>Fanta</span>
+        </div>
+        <div class="inputBox">
+          <input type="number" id="cocacola" required />
+          <span>Coca-Cola</span>
+        </div>
+      </div>
+      <div class="grid2">
+        <div class="buttonBox">
+          <button onclick="Hotel()">CREA FATTURA</button>
+        </div>
+
+        <div id="totale" class="output"></div>
+        <div id="fattura" class="output"></div>
+        <div id="copia"></div>
+      </div>
+    </div>
+  </body>
+</html>
