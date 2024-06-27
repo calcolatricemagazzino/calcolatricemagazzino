@@ -541,6 +541,7 @@ function Market() {
   oggetti[64] = parseInt(document.getElementById("libreria").value);
   oggetti[65] = parseInt(document.getElementById("giochi").value);
   oggetti[66] = parseInt(document.getElementById("ombrello").value);
+  oggetti[67] = parseInt(document.getElementById("cestini").value);
 
   var prezzi = [
     { nome: "Completo Adidas", prezzo: 3360 },
@@ -610,6 +611,7 @@ function Market() {
     { nome: "Libreria", prezzo: 750 },
     { nome: "Giochi", prezzo: 400 },
     { nome: "Ombrello", prezzo: 60 },
+    { nome: "Cestini", prezzo: 40 },
   ];
 
   iterazione(oggetti, prezzi);
