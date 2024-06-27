@@ -279,6 +279,8 @@ function Masseria() {
   );
   oggetti[16] = parseInt(document.getElementById("ciambellarosa").value);
   oggetti[17] = parseInt(document.getElementById("ciambellaallamenta").value);
+  oggetti[18] = parseInt(document.getElementById("ciambellaalpistacchio").value);
+  oggetti[19] = parseInt(document.getElementById("hamburgerdellabestia").value);
 
   var prezzi = [
     { nome: "Hot Dog", prezzo: 40 },
@@ -299,6 +301,8 @@ function Masseria() {
     { nome: "Ciambella al Cioccolato", prezzo: 160 },
     { nome: "Ciambella Rosa", prezzo: 160 },
     { nome: "Ciambella alla Menta", prezzo: 160 },
+    { nome: "Ciambella al Pistacchio", prezzo: 160 },
+    { nome: "Hamburger della Bestia", prezzo: 80 },
   ];
 
   iterazione(oggetti, prezzi);
